@@ -1,9 +1,8 @@
-
 import './App.css';
 import { Box
  } from '@chakra-ui/react';
 
-import { Routes, Route } from 'react-router-dom';
+
 import Main from './components/Main';
 
 function App() {
@@ -14,12 +13,6 @@ function App() {
     <Box>
     {/* <Nav ref={btnRef}/> */}
     <Main />
-    <Routes>
-      <Route
-        path="/"
-      />
-    </Routes>
-    
     </Box>
   );
 }

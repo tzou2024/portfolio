@@ -1,4 +1,3 @@
-
 import {
     Flex,
     Spacer,
@@ -6,13 +5,19 @@ import {
     Button,
     useMediaQuery,
   } from '@chakra-ui/react';
-  import Nav from './Nav';
-  import React from 'react';
-
+import Nav from './Nav';
+import React from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Resume from './Resume';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
+import Home from './Home';
+import '../Styles.css'
   
   const Main = () => {
     const [isLargerThanLG] = useMediaQuery('(min-width: 62em)');
-  
+    
     return (
       <Flex
         width="full"
@@ -28,29 +33,39 @@ import {
           mb={isLargerThanLG ? '0' : '6'}
         //   alignItems="center"
           justifyContent="center"
+          borderBottom={!isLargerThanLG ?"4px solid white":""}
+          h={!isLargerThanLG ?"100vh":""}
         >
           <Nav />
         </Flex>
         <Spacer />
         <Flex
-          w={isLargerThanLG ? '60%' : 'full'}
-          flexDirection="column"
-          ml={isLargerThanLG ? '7' : '0'}
-        >
-          <Text fontSize={isLargerThanLG ? '5xl' : '4xl'} fontWeight="bold">
-            We build, We revive
-          </Text>
-  
-          <Text mb="6" opacity="0.8">
-            Your business needs to be in safe hands at all times. We ensure you
-            never run out of customers and not run at loss. We are trusted by over
-            500+ companies to deliver quality marketing campaigns using Digital
-            marketing & Offline marketing channels.
-          </Text>
-  
-          <Button width="200px" size="lg" colorScheme="blue">
-            CONTACT US
-          </Button>
+        w={isLargerThanLG ? '60%' : 'full'}
+        flexDirection="column"
+        ml={isLargerThanLG ? '7' : '0'}
+      >
+        <Routes>
+          <Route
+            path="/portfolio"
+            element={<Home isLargerThanLG={isLargerThanLG}/>}
+          />
+          <Route
+            path="/portfolio/projects"
+            element={<Projects isLargerThanLG={isLargerThanLG}/>}
+          />
+          <Route
+            path="/portfolio/about"
+            element={<About isLargerThanLG={isLargerThanLG}/>}
+          />
+          <Route
+            path="/portfolio/resume"
+            element={<Resume isLargerThanLG={isLargerThanLG}/>}
+          />
+          <Route
+            path="/portfolio/contact"
+            element={<Contact isLargerThanLG={isLargerThanLG}/>}
+          />
+        </Routes>
         </Flex>
       </Flex>
     );

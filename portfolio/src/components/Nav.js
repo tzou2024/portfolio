@@ -6,6 +6,7 @@ import {
   useColorMode,
   Box
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -42,22 +43,23 @@ const Nav = ({ onOpen, ref }) => {
         </Text>
     </Flex>
     <Flex justifyContent={"space-around"} mt="5"  py="2" mx="2" borderBottom={"4px solid black"} fontSize="2xl">
-        <Text className='hoverable' px="5">
-            Portfolio
-        </Text>
-        <Text className='hoverable' px="5">
+    
+        <Link className='hoverable' px="5" to="/portfolio/projects">
+            Projects
+        </Link>
+        <Link to="/portfolio/about" className='hoverable' px="5">
             About
-        </Text>
-        <Text className='hoverable' px="5">
+        </Link>
+        <Link to="/portfolio/resume" className='hoverable' px="5">
             Resume
-        </Text>
-        <Text className='hoverable' px="5">
+        </Link>
+        <Link to="/portfolio/contact" className='hoverable' px="5">
             Contact
-        </Text>
+        </Link>
 
     </Flex>
 
-    <Flex  textColor="white" justifyContent={"space-around"} mt="8">
+    <Flex  textColor="white" justifyContent={"space-around"} my="8">
         <Box p="2" className='hoverable'>
             <FaGithub  fontSize={"40px"} color={colorMode === 'light'? 
             "black" : "white"}/>
