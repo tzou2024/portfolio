@@ -26,7 +26,7 @@ const Nav = ({ onOpen, ref }) => {
       <Flex flexDirection={"column"} width="full">
         <Flex
       >
-        <IconButton mr="10" w={6} h={6} p={5} onClick={toggleColorMode}>
+        <IconButton mr="10" w={6} h={6} p={5} onClick={toggleColorMode} className='neumo'>
           {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
 

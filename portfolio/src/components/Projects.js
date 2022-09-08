@@ -1,7 +1,7 @@
 import React from 'react'
 import data from "../data/projects"
 import { 
-  Box,
+  Flex
 
  } from '@chakra-ui/react'
 import Cardo from './card'
@@ -16,9 +16,9 @@ const Projects = () => {
   })
 
   return (
-    <div>
+    <Flex wrap={"wrap"}>
       {projMap}
-    </div>
+    </Flex>
   )
 }
 
