@@ -6,13 +6,15 @@ import {
   useColorMode,
   Box
 } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Nav = ({ onOpen, ref }) => {
   const [scroll, setScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const navigate = useNavigate()
 
   const changeScroll = () =>
     document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
@@ -60,12 +62,12 @@ const Nav = ({ onOpen, ref }) => {
     </Flex>
 
     <Flex  textColor="white" justifyContent={"space-around"} my="8">
-        <Box p="2" className='hoverable'>
+        <Box p="2" className='hoverable' onClick={() => window.location.href="https://github.com/tzou2024"}>
             <FaGithub  fontSize={"40px"} color={colorMode === 'light'? 
             "black" : "white"}/>
         </Box>
 
-        <Box p="2" className='hoverable'>
+        <Box p="2" className='hoverable' onClick={() => window.location.href="https://www.linkedin.com/in/trevor-zou/"}>
             <FaLinkedin fontSize={"40px"} color={colorMode === 'light'? 
             "black" : "white"}/>
         </Box>
