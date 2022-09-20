@@ -34,7 +34,7 @@ import '../Styles.css'
         //   alignItems="center"
           justifyContent="center"
           borderBottom={!isLargerThanLG ?"4px solid white":""}
-          h={!isLargerThanLG ?"80vh":""}
+          h={!isLargerThanLG ?"70vh":""}
         >
           <Nav />
         </Flex>
@@ -46,7 +46,7 @@ import '../Styles.css'
       >
         <Routes>
           <Route
-            path="/"
+            path="/portfolio"
             element={<Home isLargerThanLG={isLargerThanLG}/>}
           />
           <Route
