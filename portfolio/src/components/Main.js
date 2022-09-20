@@ -34,7 +34,7 @@ import '../Styles.css'
         //   alignItems="center"
           justifyContent="center"
           borderBottom={!isLargerThanLG ?"4px solid white":""}
-          h={!isLargerThanLG ?"100vh":""}
+          h={!isLargerThanLG ?"80vh":""}
         >
           <Nav />
         </Flex>
