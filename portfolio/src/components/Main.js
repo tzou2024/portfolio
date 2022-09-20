@@ -46,7 +46,7 @@ import '../Styles.css'
       >
         <Routes>
           <Route
-            path="/portfolio"
+            path="/"
             element={<Home isLargerThanLG={isLargerThanLG}/>}
           />
           <Route
