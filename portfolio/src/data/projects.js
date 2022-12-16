@@ -10,9 +10,9 @@ import bod from './images/BOD.png'
 import hydroimg from './images/hydroimg.png'
 const data = [
     {
-        name: "Hydroponics",
-        description: 'An API for Olin\'s automated hydroponics and sustainable food systems project team',
-        tags: ["Python", "FastAPI", "MongoDB", "AWS", "CI/CD"],
+        name: "Hydrangea API",
+        description: 'an API for Olin\'s automated hydroponics and sustainable food systems project team.',
+        tags: ["Python", "FastAPI", "MongoDB", "AWS", "CI/CD", "EC2"],
         repos: {
             "Repo": "https://github.com/tzou2024/hydrangea",
             "Design Doc": "https://docs.google.com/document/d/1Pc2PLaOh7dCDCJWnpELBCgfNip4MotUVfBgKtQ5LqRU/edit?usp=sharing"
