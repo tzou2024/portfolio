@@ -17,7 +17,7 @@ const Cardo = ({proj}) => {
   })
   return (
     <Box maxW='30%' borderWidth='2px' borderColor="black" borderRadius='lg' overflow='hidden' p="2" position={"relative"} bg="gray.100" m="2">
-    <Image src={proj.img} w="100%" opacity={".5"}/>
+    <Image src={proj.img} w="100%" height="80%" opacity={".5"}/>
     <Box
           mt='1'
           fontWeight='semibold'

@@ -18,7 +18,10 @@ const About = ({isLargerThanLG}) => {
         Outside of backend work, I also have experience in React, Datascience, and Machine Learning.
         </Text>
         <Text fontSize={"xl"} py="4">
-        I live in Nashville, TN, but current go to school at <b>Olin College of Engineering</b> in Needham, MA. If I'm not coding, odds are I'm either running, rockclimbing, powerlifting, or sitting at the piano :)
+        I grew up in Nashville, TN, and am studying Engingeering with Computing at <b>Olin College of Engineering</b> in Needham, MA. If I'm not coding, odds are I'm either running, rockclimbing, powerlifting, or sitting at the piano :)
+        </Text>
+        <Text fontSize={"xl"} py="4">
+        In the spring of 2023, I will be studying abroad at University College Cork in Cork, Ireland. I will be focusing on digital music production and music technologies. I will still be available, and am looking for an internship in summer '23.
         </Text>
         <Text fontSize={"5xl"} py="4">
             Let's make something great.
